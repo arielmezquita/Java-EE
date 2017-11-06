@@ -22,6 +22,7 @@ function publicarProductos(){
 
 
 function addHTMLTableRow(){
+	var imagenclass = $("#imagen-select option:selected").text();
 	var table = document.getElementById('tableproductos'),
 		newRow = table.insertRow(table.length),
 		cell0 = newRow.insertCell(0),
@@ -31,8 +32,9 @@ function addHTMLTableRow(){
 		nombreproducto  = document.getElementById("nombreproducto").value,
 		descripcionproducto  = document.getElementById("descripcionproducto").value,
 		precioproducto  = document.getElementById("precioproducto").value;
-
-		cell0.innerHTML = "Imagen";
+		
+		//cell0.innerHTML = imagenclass;
+		cell0.innerHTML = "<div class="+imagenclass+"></div>";
 		//cell0.rowSpan = 3;		
 		cell1.innerHTML = nombreproducto;
 		cell2.innerHTML = descripcionproducto;

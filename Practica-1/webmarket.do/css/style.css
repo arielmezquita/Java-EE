@@ -123,7 +123,92 @@ header {
 	transition: all .3s;
 }
 
-   
+
+table{
+	width: 100%;
+	color: #ddd;
+
+}
+
+li{
+	color: #ddd;
+}
+
+#tableproductos th{
+	height: 50px;
+}
+
+.img-cereal {
+	background-image: url("../img/productos/cereal.png");
+	width: 140px;
+	height: 140px;
+	background-size: 100% 100%;
+	margin: auto;
+}
+
+
+.img-jugo {
+	background-image: url("../img/productos/jugo.png");
+	width: 140px;
+	height: 140px;
+	background-size: 100% 100%;
+	margin: auto;
+}
+
+.img-leche {
+	background-image: url("../img/productos/leche.png");
+	width: 140px;
+	height: 140px;
+	background-size: 100% 100%;
+	margin: auto;
+}
+
+.img-pasta {
+	background-image: url("../img/productos/pasta.png");
+	width: 140px;
+	height: 140px;
+	background-size: 100% 100%;
+	margin: auto;
+}
+
+.img-queso {
+	background-image: url("../img/productos/queso-danes.png");
+	width: 140px;
+	height: 140px;
+	background-size: 100% 100%;
+	margin: auto;
+}
+
+
+.img-refresco {
+	background-image: url("../img/productos/refresco.png");
+	width: 140px;
+	height: 140px;
+	background-size: 100% 100%;
+	margin: auto;
+}
+
+
+.img-sopa {
+	background-image: url("../img/productos/sopa.png");
+	width: 140px;
+	height: 140px;
+	background-size: 100% 100%;
+	margin: auto;
+}
+
+
+input {
+	margin: 5px;
+}
+
+p  {
+	color: #ddd;
+} 
+label{
+	color: #ddd;	
+}
+
 
 
 
