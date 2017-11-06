@@ -29,18 +29,39 @@ function addHTMLTableRow(){
 		cell1 = newRow.insertCell(1),
 		cell2 = newRow.insertCell(2),
 		cell3 = newRow.insertCell(3),
+		cell4 = newRow.insertCell(4),
 		nombreproducto  = document.getElementById("nombreproducto").value,
 		descripcionproducto  = document.getElementById("descripcionproducto").value,
 		precioproducto  = document.getElementById("precioproducto").value;
 		
-		//cell0.innerHTML = imagenclass;
 		cell0.innerHTML = "<div class="+imagenclass+"></div>";
 		//cell0.rowSpan = 3;		
 		cell1.innerHTML = nombreproducto;
 		cell2.innerHTML = descripcionproducto;
-		cell3.innerHTML = precioproducto;
+		cell3.innerHTML = "RD$"+precioproducto;
+		cell4.innerHTML = "<button>Editar</button>"
 		clearForm();
+		alert("Registrado en la seccion Productos");
+		$('#productos').removeClass().toggleClass($(this).attr('id'));
+			hideSeccion();
+			$('.products-zone').show();
 }
+
+
+function addProducto(){
+		$('#articulos').removeClass().toggleClass($(this).attr('id'));
+			hideSeccion();
+			$('.article-zone').show();
+}
+
+function removeProducto(){
+	tableproductos.deleteRow(rIndex);
+}
+
+function editProducto(){
+
+}
+
 
 
 function clearForm(){

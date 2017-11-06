@@ -97,18 +97,18 @@
               <nav class="products-zone">
                 <h3>Productos</h3>
                 <p>Catalogo de Productos Publicados en Nuestra Web</p>
+                <button onclick="addProducto();">Agregar</button>
+                <button onclick="editProducto();">Editar</button>
+                 <button onclick="removeProducto();">Eliminar</button>
                 <table id="tableproductos" border="3">
                   <tr>
-                    <td rowspan="3" id="imagen-public"><div class="img-public"></div></td>
-                    <td id="nombre-public">Nombre</td><td rowspan="3">
-                      <button>Ver</button>
-                      <button>Editar</button>
-                      <button>Borrar</button>
-                    </td>
+                    <td>Producto</td>
+                    <td>Nombre</td>
+                    <td>Descripcion</td>
+                    <td>Precio</td>
+                    <td>Opciones</td>
                   </tr>
-                  <tr><td id="descripcion-public">Descripcion</td></tr>
-                  <tr><td id="precio-public">Precio</td></tr>
-                </table>
+                  </table>
 
               </nav>
             </div>
